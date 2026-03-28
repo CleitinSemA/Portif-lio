@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfólio - Lucas Schneider</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg,#1a0a2e,#0f0620);
+  color: white;
+}
+
+/* ROBÔ */
+.robot {
+  position: relative;
+  width: 120px;
+  height: 160px;
+  margin: auto;
+  animation: float 4s ease-in-out infinite;
+}
+.head {
+  width: 80px;
+  height: 50px;
+  background: #7c3aed;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+.eye {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  animation: blink 3s infinite;
+}
+.eye.left { left: 30px; }
+.eye.right { right: 30px; }
+
+.body {
+  width: 100px;
+  height: 80px;
+  background: #6366f1;
+  border-radius: 12px;
+  position: absolute;
+  top: 60px;
+  left: 10px;
+}
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes blink {
+  0%,90%,100% { height: 10px; }
+  95% { height: 2px; }
+}
+
+.project img {
+  transition: 0.4s;
+}
+.project img:hover {
+  transform: scale(1.1);
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="text-center py-20">
+  <h1 class="text-5xl font-bold mb-4">Lucas Schneider</h1>
+  <p class="text-xl mb-6">Estudante de Mecatrônica e Robótica</p>
+
+  <!-- ROBÔ -->
+  <div class="robot">
+    <div class="head"></div>
+    <div class="eye left"></div>
+    <div class="eye right"></div>
+    <div class="body"></div>
+  </div>
+
+  <p class="mt-6 max-w-xl mx-auto">
+    Tenho 15 anos, estudo no IFSC e sou apaixonado por robótica, tecnologia e literatura.
+    Participei da FLL por 2 anos e atualmente atuo como mentor.
+  </p>
+</section>
+
+<!-- SOBRE -->
+<section class="px-6 py-16 max-w-4xl mx-auto">
+  <h2 class="text-3xl mb-4">Sobre mim</h2>
+  <p>
+    Estudante de Mecatrônica no IFSC. Minha jornada começou com robótica na FLL,
+    onde desenvolvi habilidades em programação, trabalho em equipe e resolução de problemas.
+    Hoje continuo como mentor ajudando novas equipes.
+  </p>
+</section>
+
+<!-- PROJETOS -->
+<section class="px-6 py-16 max-w-6xl mx-auto">
+  <h2 class="text-3xl mb-10">Projetos</h2>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <div class="project">
+      <img src="https://via.placeholder.com/400x300" class="rounded-xl mb-3">
+      <h3 class="font-bold">Robô FLL</h3>
+      <p>Robô criado para cumprir missões com precisão.</p>
+    </div>
+
+    <div class="project">
+      <img src="https://via.placeholder.com/400x300" class="rounded-xl mb-3">
+      <h3 class="font-bold">Projeto de Inovação</h3>
+      <p>Solução para problemas reais seguindo tema da FLL.</p>
+    </div>
+
+    <div class="project">
+      <img src="https://via.placeholder.com/400x300" class="rounded-xl mb-3">
+      <h3 class="font-bold">Mentoria</h3>
+      <p>Ajuda a equipes iniciantes em robótica.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ROBÓTICA -->
+<section class="px-6 py-16 max-w-6xl mx-auto">
+  <h2 class="text-3xl mb-10">Robótica & FLL</h2>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <div class="bg-purple-900 p-6 rounded-xl">
+      <h3 class="font-bold mb-2">Construção</h3>
+      <p>Montagem de robôs eficientes com LEGO.</p>
+    </div>
+
+    <div class="bg-pink-900 p-6 rounded-xl">
+      <h3 class="font-bold mb-2">Programação</h3>
+      <p>Uso de lógica e sensores para automação.</p>
+    </div>
+
+    <div class="bg-indigo-900 p-6 rounded-xl">
+      <h3 class="font-bold mb-2">Core Values</h3>
+      <p>Trabalho em equipe e respeito.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section class="px-6 py-16 max-w-6xl mx-auto">
+  <h2 class="text-3xl mb-10">Galeria</h2>
+
+  <div class="grid md:grid-cols-3 gap-4">
+    <img src="https://via.placeholder.com/300" class="rounded-xl">
+    <img src="https://via.placeholder.com/300" class="rounded-xl">
+    <img src="https://via.placeholder.com/300" class="rounded-xl">
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="text-center py-16">
+  <h2 class="text-3xl mb-4">Contato</h2>
+  <p>Quer falar comigo? Me chama!</p>
+</section>
+
+</body>
+</html>
