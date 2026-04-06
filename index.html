@@ -411,22 +411,7 @@
         document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
       });
     });
-     // GALERIA MODAL
-const modal = document.getElementById('modal');
-const modalImg = document.getElementById('modal-img');
-
-document.querySelectorAll('.gallery-item img').forEach(img => {
-  img.addEventListener('click', () => {
-    modal.classList.remove('hidden');
-    modal.classList.add('flex');
-    modalImg.src = img.src;
-  });
-});
-
-modal.addEventListener('click', () => {
-  modal.classList.add('hidden');
-  modal.classList.remove('flex');
-});
+    
     lucide.createIcons();
 
     // Element SDK
