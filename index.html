@@ -324,64 +324,7 @@
       lucide.createIcons();
     }
 
-    <section id="gallery" class="section-reveal px-6 py-24">
-  <div class="max-w-6xl mx-auto">
-
-    <!-- Título -->
-    <div class="flex items-center gap-4 mb-4">
-      <div class="w-12 h-[2px]" style="background:#ec4899;"></div>
-      <p class="text-sm font-semibold tracking-[0.3em] uppercase" style="color:#f472b6;">
-        Evidências
-      </p>
-    </div>
-
-    <h2 class="text-4xl md:text-5xl font-800 mb-6" style="color:#e9d5ff;">
-      Galeria de Experiências
-    </h2>
-
-    <p class="serif italic text-xl mb-10 max-w-2xl" style="color:#a78bfa;">
-      Registros reais das minhas experiências com robótica, competições e atividades.
-    </p>
-
-    <!-- Grid -->
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-      <!-- ITEM -->
-      <div class="group relative cursor-pointer overflow-hidden rounded-2xl">
-        <img src="img1.jpg" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
-
-        <!-- Overlay -->
-        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex flex-col justify-end p-5">
-          <h3 class="text-lg font-bold text-white">Competição FLL</h3>
-          <p class="text-sm text-gray-300">Momento durante as missões com o robô</p>
-        </div>
-      </div>
-
-      <!-- ITEM -->
-      <div class="group relative cursor-pointer overflow-hidden rounded-2xl">
-        <img src="img2.jpg" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
-        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex flex-col justify-end p-5">
-          <h3 class="text-lg font-bold text-white">Equipe</h3>
-          <p class="text-sm text-gray-300">Equipe durante o torneio</p>
-        </div>
-      </div>
-
-      <!-- ITEM -->
-      <div class="group relative cursor-pointer overflow-hidden rounded-2xl">
-        <img src="img3.jpg" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
-        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex flex-col justify-end p-5">
-          <h3 class="text-lg font-bold text-white">Montagem</h3>
-          <p class="text-sm text-gray-300">Desenvolvimento do robô</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-   
-   
-   
-     document.getElementById('project-tabs').addEventListener('click', e => {
+      document.getElementById('project-tabs').addEventListener('click', e => {
       const btn = e.target.closest('.tab-btn');
       if (!btn) return;
       currentFilter = btn.dataset.filter;
