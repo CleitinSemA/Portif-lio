@@ -136,7 +136,7 @@
       <div class="relative w-80 h-80">
        <div class="absolute inset-0 rounded-3xl rotate-6 transition-transform hover:rotate-12" style="background:linear-gradient(135deg,#7c3aed,#ec4899);"></div>
        <div class="absolute inset-0 rounded-3xl -rotate-3 flex items-center justify-center text-8xl transition-transform hover:-rotate-6" style="background:linear-gradient(135deg,#1e1b4b,#312e81);">
-        <img src="foto.jpg.jpeg" class="w-52 h-52"
+        <img src="foto.jpg.jpeg" class="w-52 h-52 object-cover border-4 border-white rounded-3xl shadow-Lg" alt="Foto minha"
        </div>
       </div>
      </div>
@@ -151,22 +151,11 @@
      <h2 id="about-title" class="text-4xl md:text-5xl font-800 mb-10" style="color:#e9d5ff;">Sobre Mim</h2>
      <div class="grid md:grid-cols-2 gap-12">
       <div>
-  <p id="about-text" class="serif text-xl leading-relaxed" style="color:#d1d5db;">
-    Sou um estudante, atualmente na 1ª fase do Curso Técnico Integrado em Mecatrônica no IFSC - Campus Florianópolis. Sou uma pessoa que se interessa por diversas áreas, então aproveito isso para participar de várias atividades extracurriculares, como xadrez, clube de escrita, clube de literatura, aulas de inglês e robótica (atualmente como mentor de uma equipe para a FLL). Como hobbies, também gosto de fotografia e academia.
-  </p>
+       <p id="about-text" class="serif text-xl leading-relaxed" style="color:#d1d5db;">Sou um estudante, atualmente na 1º fase do "Curso Técnico Integrado Em Mecatrônica" oferecido pelo IFSC - Campûs Florianópolis, sou uma pessoa que se interessa por diversas áreas e coisas diferentes, então acabo aproveitando esse interesse e me dedico a fazer diversas atividades extracurriculares diferentes, alguns exemplos que faço atualmente são: Xadrez, Clube de Escrita, Clube de Literatura, Aulas de Inglês, Robótica (atualmente como mentor de uma equipe para a FLL) e como hobbys e coisas por diversão posso citar fotografia e a academia.</p>
+       </p> De qualquer forma, a robótica foi algo que realmente marcou minha vida positivamente, começou em 2022, quando entrei para a FCEE - Fundação Catarinense de Educação Especial, de começo, fiquei mais para o lado criativo, escrevendo histórias, produzindo pesquisas e conteúdos ligados a diversas áreas e claro, fazendo de tudo um pouco, até que, no final de 2023 fui convidado a participar da oficina de robótica da Fundação, logo após o recessso de férias, logo no começo de 2024, já comecei a produzir pequenos projetos, majoritariamente envolvendo coisas básicas, como arduino e programação por blocos, porém por coseguir bons resultados e por conta da predisposição que tinha para a área, acabei sendo convidado pela professora que coordena a oficina, a participar da equipe de robótica montada por ela, com o ojetivo de participar da FLL.</p></p>
+       </p> O tempo foi passando e com o tempo acabei pegando o jeito de como trabalhar com mais pessoas, principalmente na parte da montagem e design, tanto do robô quanto dos módulos produzidos para o mesmo (que era a minha função principal para a equipe) porém, mais para a frente, comecei a fazer de tudo um pouco, desde auxiliar na programação, pesquisas para o "Projeto Inovação" e o entrosamento da equipe. Sobre resultados, na primeira vez que participei, acabamos ocupando a 19° posição, principalemtne por conta da falta de experiência geral e a repentina saída do líder da equipe, já na segunda tentativa, mesmo com só 3 integrantes na equipe, mesmo sendo a única equipe que ainda utilizava o EV3 e tendo um tempo total de 4 semanas para montar absolutamente tudo para o torneio (por conta de problemas na gestão da Fundação) ainda sim, ficamos em 9° lugar na competição.</p>
 
-  <p class="serif text-xl leading-relaxed" style="color:#d1d5db;">
-    A robótica foi algo que realmente marcou minha vida de forma positiva. Tudo começou em 2022, quando entrei na Fundação Catarinense de Educação Especial (FCEE). No início, fiquei mais na parte criativa, escrevendo histórias, produzindo pesquisas e conteúdos diversos. No final de 2023, fui convidado para a oficina de robótica da fundação e, no começo de 2024, já comecei a desenvolver pequenos projetos, principalmente com Arduino e programação em blocos.
-  </p>
-
-  <p class="serif text-xl leading-relaxed" style="color:#d1d5db;">
-    Com o tempo, devido aos bons resultados e à minha dedicação, fui convidado a integrar a equipe de robótica com o objetivo de participar da FLL. Passei a atuar principalmente na montagem e design do robô e dos módulos, mas também ajudei na programação, pesquisas e organização da equipe.
-  </p>
-
-  <p class="serif text-xl leading-relaxed" style="color:#d1d5db;">
-    Em relação aos resultados, na minha primeira participação ficamos em 19º lugar, principalmente pela falta de experiência e pela saída repentina do líder da equipe. Já na segunda tentativa, mesmo com apenas 3 integrantes, utilizando EV3 e com apenas 4 semanas de preparação, conseguimos alcançar o 9º lugar na competição.
-  </p>
-</div>
+      </div>
       <div class="space-y-6">
        <div class="p-6 rounded-2xl border transition-all hover:border-purple-500/40" style="background:rgba(124,58,237,0.08);border-color:rgba(124,58,237,0.2);">
         <div class="flex items-center gap-3 mb-2"><i data-lucide="code-2" style="width:22px;height:22px;color:#c084fc;"></i>
@@ -198,7 +187,7 @@
      </div>
      <h2 id="projects-title" class="text-4xl md:text-5xl font-800 mb-6" style="color:#e9d5ff;">Projetos em Destaque</h2>
      <p class="serif italic text-xl mb-10 max-w-2xl" style="color:#a78bfa;">Minhas maiores conquistas envolvendo o mundo da robótica.</p><!-- Tabs -->
-     <div class="flex flex-wrap gap-2 mb-10" id="project-tabs"><button class="tab-btn active px-5 py-2 rounded-full text-sm font-medium" style="background:#7c3aed;color:white;" data-filter="all">Todos</button> <button class="tab-btn px-5 py-2 rounded-full text-sm font-medium" style="background:rgba(124,58,237,0.15);color:#c084fc;" data-filter="dev">Desenvolvimento</button> <button class="tab-btn px-5 py-2 rounded-full text-sm font-medium" style="background:rgba(124,58,237,0.15);color:#c084fc;" data-filter="brand">Branding</button> <button class="tab-btn px-5 py-2 rounded-full text-sm font-medium" style="background:rgba(124,58,237,0.15);color:#c084fc;" data-filter="design">Design</button>
+     <div class="flex flex-wrap gap-2 mb-10" id="project-tabs"><button class="tab-btn active px-5 py-2 rounded-full text-sm font-medium" style="background:#7c3aed;color:white;" data-filter="all">Todos</button> <button class="tab-btn px-5 py-2 rounded-full text-sm font-medium" style="background:rgba(124,58,237,0.15);color:#c084fc;" data-filter="design">Design</button> <button class="tab-btn px-5 py-2 rounded-full text-sm font-medium" style="background:rgba(124,58,237,0.15);color:#c084fc;" data-filter="dev">Desenvolvimento</button> <button class="tab-btn px-5 py-2 rounded-full text-sm font-medium" style="background:rgba(124,58,237,0.15);color:#c084fc;" data-filter="brand">Branding</button>
      </div>
      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid"><!-- Cards generated by JS -->
      </div>
@@ -251,7 +240,7 @@
       <div class="w-12 h-[2px]" style="background:#7c3aed;"></div>
      </div>
      <h2 id="contact-title" class="text-4xl md:text-5xl font-800 mb-6" style="color:#e9d5ff;">Gostaram?</h2>
-     <p id="contact-text" class="serif italic text-xl mb-12 max-w-xl mx-auto" style="color:#c084fc;">Me aventurei bastante criando esse site, adoraria ter um feedback (álias, peço desculpas pela falta das imagens no portifólio):^</p>
+     <p id="contact-text" class="serif italic text-xl mb-12 max-w-xl mx-auto" style="color:#c084fc;">Me aventurei bastante criando esse site, adoraria ter um feedback :^</p>
      <form id="contact-form" class="text-left space-y-5">
       <div class="grid md:grid-cols-2 gap-5">
        <div><label for="cf-name" class="block text-sm font-medium mb-2" style="color:#c084fc;">Nome</label> <input id="cf-name" type="text" placeholder="Seu nome" class="w-full px-5 py-3 rounded-xl text-sm outline-none transition-all focus:ring-2" style="background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.2);color:#e9d5ff;--tw-ring-color:#7c3aed;">
@@ -295,7 +284,7 @@
   },
   {
     title: "Olimpiadas do conehcimento",
-    desc: "2 vezes medalhista da OBMEP, conquistei prata e bronze, uma vez medalhista da olimpiada Canguru (que infelizmente acabei participando apenas uma vez), na qual ganhei prata, e também 1 vez campeão nacional da OBERERI (primeira edição da Olimpiada para estudantes de 8° e 9° anos)",
+    desc: "2 vezes medalhista da OBMEP, conquistei prata e bronze, uma vez medalhista da olimpiada Canguru (que infelizmente acabei participando apenas uma vez), na qual ganhei prata, e também 1 vez campeão nacional da OBERERI (primeira edição da Olimpiada para estadantes de 8° e 9° anos)",
     cat: "dev",
     gradient: "linear-gradient(135deg,#ec4899,#f43f5e)",
     icon: "medal"
@@ -305,7 +294,26 @@
     const grid = document.getElementById('projects-grid');
     let currentFilter = 'all';
 
-   function renderProjects(filter) { const filtered = filter === 'all' ? projects : projects.filter(p => p.cat === filter); grid.innerHTML = ''; filtered.forEach((p, i) => { const card = document.createElement('div'); card.className = 'project-card rounded-2xl overflow-hidden border cursor-pointer'; card.style.cssText = 'background:rgba(124,58,237,0.06);border-color:rgba(124,58,237,0.15);animation:scaleIn 0.4s ease forwards;opacity:0;animation-delay:' + (i * 0.1) + 's;'; card.innerHTML = <div class="h-44 flex items-center justify-center" style="background:${p.gradient};"> <i data-lucide="${p.icon}" style="width:48px;height:48px;color:rgba(255,255,255,0.9);"></i> </div> <div class="p-6"> <h3 class="font-bold text-lg mb-2" style="color:#e9d5ff;">${p.title}</h3> <p class="text-sm leading-relaxed" style="color:#a1a1aa;">${p.desc}</p> <span class="inline-block mt-4 text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full" style="background:rgba(124,58,237,0.15);color:#c084fc;">${p.cat === 'brand' ? 'Desenvolvimento' : p.cat === 'dev' ? 'Desenvolvimento' : 'Desenvolvimento'}</span> </div>; grid.appendChild(card); }); lucide.createIcons(); }
+    function renderProjects(filter) {
+      const filtered = filter === 'all' ? projects : projects.filter(p => p.cat === filter);
+      grid.innerHTML = '';
+      filtered.forEach((p, i) => {
+        const card = document.createElement('div');
+        card.className = 'project-card rounded-2xl overflow-hidden border cursor-pointer';
+        card.style.cssText = 'background:rgba(124,58,237,0.06);border-color:rgba(124,58,237,0.15);animation:scaleIn 0.4s ease forwards;opacity:0;animation-delay:' + (i * 0.1) + 's;';
+        card.innerHTML = `
+          <div class="h-44 flex items-center justify-center" style="background:${p.gradient};">
+            <i data-lucide="${p.icon}" style="width:48px;height:48px;color:rgba(255,255,255,0.9);"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="font-bold text-lg mb-2" style="color:#e9d5ff;">${p.title}</h3>
+            <p class="text-sm leading-relaxed" style="color:#a1a1aa;">${p.desc}</p>
+            <span class="inline-block mt-4 text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full" style="background:rgba(124,58,237,0.15);color:#c084fc;">${p.cat === 'brand' ? 'Branding' : p.cat === 'dev' ? 'Desenvolvimento' : 'Design'}</span>
+          </div>`;
+        grid.appendChild(card);
+      });
+      lucide.createIcons();
+    }
 
     document.getElementById('project-tabs').addEventListener('click', e => {
       const btn = e.target.closest('.tab-btn');
